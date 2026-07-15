@@ -271,7 +271,10 @@
 
             // 🔐 Hardcode credentials (untuk demo sekolah)
             if (username === 'admin' && password === 'admin123') {
+<<<<<<< HEAD
                 sessionStorage.setItem('isAdminLoggedIn', 'true');
+=======
+>>>>>>> cc1fc1feb0baae36d32e21088ccdf662e487ff21
                 document.getElementById('loginPage').classList.add('hidden');
                 document.getElementById('dashboardPage').classList.remove('hidden');
                 loadDashboard();
@@ -282,7 +285,10 @@
 
         function logout() {
             if (confirm('Yakin ingin logout?')) {
+<<<<<<< HEAD
                 sessionStorage.removeItem('isAdminLoggedIn');
+=======
+>>>>>>> cc1fc1feb0baae36d32e21088ccdf662e487ff21
                 document.getElementById('loginPage').classList.remove('hidden');
                 document.getElementById('dashboardPage').classList.add('hidden');
             }
@@ -564,6 +570,7 @@
         // =============================================================
         document.addEventListener('DOMContentLoaded', function() {
             // Cek apakah sudah login (untuk keamanan session sederhana)
+<<<<<<< HEAD
             if (sessionStorage.getItem('isAdminLoggedIn') === 'true') {
                 document.getElementById('loginPage').classList.add('hidden');
                 document.getElementById('dashboardPage').classList.remove('hidden');
@@ -572,6 +579,11 @@
                 document.getElementById('loginPage').classList.remove('hidden');
                 document.getElementById('dashboardPage').classList.add('hidden');
             }
+=======
+            // Tampilkan halaman login dulu
+            document.getElementById('loginPage').classList.remove('hidden');
+            document.getElementById('dashboardPage').classList.add('hidden');
+>>>>>>> cc1fc1feb0baae36d32e21088ccdf662e487ff21
         });
     </script>
 
